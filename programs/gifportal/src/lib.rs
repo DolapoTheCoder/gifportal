@@ -7,7 +7,7 @@ declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 pub mod gifportal {
     use super::*;
     pub fn start_stuff_off(ctx: Context<StartStuffOff>) -> ProgramResult {
-        let base_account = &mut ctx.accounts.base_account
+        let base_account = &mut ctx.accounts.base_account;
         base_account.total_gifs = 0;
         Ok(())
     }
